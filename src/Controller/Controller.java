@@ -25,18 +25,23 @@ public class Controller {
         System.exit(0);
     }
 
-    public GridPane getGame_pole() {
-        return game_pole;
-    }
-
     @FXML
     public void gameStart(ActionEvent actionEvent) {
-        if (actionEvent.getSource().equals(tri))
-            Game.createMap(3, 3);
-        else if (actionEvent.getSource().equals(pyat))
-            Game.createMap(5, 4);
-        else if (actionEvent.getSource().equals(vosem))
-            Game.createMap(8, 5);
+        if (actionEvent.getSource().equals(tri)) {
+            clear();
+            Game.createMap(3, 3, game_pole);
+        } else if (actionEvent.getSource().equals(pyat)) {
+            clear();
+            Game.createMap(5, 4, game_pole);
+        } else if (actionEvent.getSource().equals(vosem)) {
+            clear();
+            Game.createMap(8, 5, game_pole);
+        }
     }
+
+    public void clear() {
+        game_pole.getChildren().clear();
+    }
+
 }
 

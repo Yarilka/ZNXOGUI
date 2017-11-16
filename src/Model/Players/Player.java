@@ -5,7 +5,7 @@ import Model.Map;
 public abstract class Player {
     String symb;
     String type;
-    String turnP = "p1";
+    public static String turnP = "p1";
     int xout, yout;
 
     public String getSymb() {

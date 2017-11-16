@@ -14,7 +14,6 @@ public class Main extends Application {
         primaryStage.setTitle("My XO GUI");
         primaryStage.setScene(new Scene(root, 635, 435));
         primaryStage.show();
-
     }
 
 

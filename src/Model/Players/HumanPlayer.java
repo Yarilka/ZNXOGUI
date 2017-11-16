@@ -17,6 +17,7 @@ public class HumanPlayer extends Player {
             xout = x;
             yout = y;
             turnP = "p2";
+            Game.game();
         }
     }
 }
